@@ -105,12 +105,12 @@ def changeContact(fileName):
             return
         
 def switchContact(fileName):
-    open("phonebook.txt", "w").writelines([l for l in open("phonebook_2.txt").readlines()]) #if "tests/file/myword" in l]
+    open("phonebook_1.txt", "w").writelines([l for l in open("phonebook_2.txt").readlines()]) #if "tests/file/myword" in l]
     os.system("cls")
     with open("phonebook_2.txt") as f:
         lines = f.readlines()
         lines = [l for l in lines] #if "ROW" in l]
-        with open("phonebook.txt", "w") as f1:
+        with open("phonebook_1.txt", "w") as f1:
             f1.writelines(lines)
     input("\n--- нажмите для продолжения Enter ---")
 
